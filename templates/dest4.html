@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+     <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="" />
+      <meta
+        name="author"
+        content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+      />
+      <meta name="generator" content="Hugo 0.88.1" />
+      <title>Travel_Guide</title>
+
+      <link
+        rel="canonical"
+        href="https://getbootstrap.com/docs/5.1/examples/blog/"
+      />
+
+      <!-- Bootstrap core CSS -->
+      <link
+        href="/docs/5.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+      />
+
+      <!-- Favicons -->
+      <link
+        rel="apple-touch-icon"
+        href="/docs/5.1/assets/img/favicons/apple-touch-icon.png"
+        sizes="180x180"
+      />
+      <link
+        rel="icon"
+        href="/docs/5.1/assets/img/favicons/favicon-32x32.png"
+        sizes="32x32"
+        type="image/png"
+      />
+      <link
+        rel="icon"
+        href="/docs/5.1/assets/img/favicons/favicon-16x16.png"
+        sizes="16x16"
+        type="image/png"
+      />
+      <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json" />
+      <link
+        rel="mask-icon"
+        href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg"
+        color="#7952b3"
+      />
+      <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico" />
+      <meta name="theme-color" content="#7952b3" />
+
+      
+      <style>
+
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+
+        .foot{
+            background-color: black;
+            height: 50px;
+            color: white;
+            padding-top: 10px;
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap"
+        rel="stylesheet"
+      />
+      <!-- Custom styles for this template -->
+      <link href="blog.css" rel="stylesheet" />
+
+    <title>Travel_Guide</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand lo" href="#">Travel_Guide</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="konkan">Map</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="ratnagiri">Ratnagiri</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="raigad">Raigad</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sindhudurg">Sindhudurg</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="mumbai">Mumbai</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact">Contact us</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-warning">
+            <a href="logout" style="text-decoration: none; color: white"
+              >Logout</a
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+    {% if messages %} {% for messages in messages %}
+    <div
+      class="alert alert-{{messages.tags}} alert-dismissible fade show my-0 "
+      role="alert"
+    >
+      <strong> {{messages}} </strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    {% endfor %} {% endif %} {% comment %} addes {% endcomment %}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <body>
+      <main class="container">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+          <div class="col-md-6 px-0">
+            {% block img1 %}{% endblock img1 %}
+            <h1 class="display-4 fst-italic">Places to visit in {% block place %}{% endblock place %}</h1>
+            <p class="lead my-3">
+             {% block discr %}{% endblock discr %}
+            </p>
+            <p class="lead mb-0">
+              <a href="#place" class="text-white fw-bold"
+                >Continue reading...</a>
+            </p>
+            <p class="lead mb-0">
+              <a href="#map" class="text-white fw" style="text-decoration: none;"
+                >view map</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h3 id="place" class="pb-4 mb-4 fst-italic border-bottom">
+              Top Attractions in {% block place1 %}{% endblock place1 %}
+            </h3>
+
+
+
+
+<!-- Place1 -->
+
+            <article class="blog-post">
+              <h2 class="blog-post-title"> {% block placename %}{% endblock placename %} </h2>
+              {% block img2 %}{% endblock img2 %}
+              
+
+           
+              <hr />
+              {% block p1 %}{% endblock p1 %}
+              
+              <h2>History</h2>
+              {% block hp1 %}{% endblock hp1 %}
+              
+             <div class="list-group-flush">
+              <h3>More details</h3>
+              <ul class="list-group list-group-horizontal ">
+                <li class="list-group-item" style="width: 200px;"> <b>Timings: </b> </li>
+                <li class="list-group-item" style="width: 200px;"> {% block time %}{% endblock time %}</li>
+                
+              </ul>
+              <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item" style="width: 200px;" ><b>Trip Duration :</b></li>
+                <li class="list-group-item" style="width: 200px;">{% block dur %}{% endblock dur %}</li>
+                
+              </ul>
+              <ul class="list-group list-group-horizontal-md">
+                <li class="list-group-item" style="width: 200px;"><b>Transportation Options:</b></li>
+                <li class="list-group-item" style="width: 200px;">{% block transport %}{% endblock transport %}</li>
+                
+              </ul>
+              <ul class="list-group list-group-horizontal-lg">
+                <li class="list-group-item" style="width: 200px;"><b>Entry Fee :</b></li>
+                <li class="list-group-item" style="width: 200px;">{% block entry %}{% endblock entry %}</li>
+                 
+              </ul>
+
+              <ul class="list-group list-group-horizontal-lg">
+                <li class="list-group-item" style="width: 200px;"><b>Distance (from CSMT):</b> </li>
+                <li class="list-group-item" style="width: 200px;">{% block distance %}{% endblock distance %}</li>
+                 
+              </ul>
+            </div>
+            <div style="height: 50px;"></div>
+
+            
+      
+<!-- Place2 -->
+<hr>
+<div style="margin: 50px;"> </div>
+
+<article class="blog-post">
+  <h2 id="marine" class="blog-post-title"> {% block placename1 %}{% endblock placename1 %} </h2>
+  {% block img3 %}{% endblock img3 %}
+  
+
+
+  <hr />
+  {% block p2 %}{% endblock p2 %}
+  
+  
+  {% block hp2 %}{% endblock hp2 %}
+  
+ <div class="list-group-flush">
+  <h3>More details</h3>
+  <ul class="list-group list-group-horizontal ">
+    <li class="list-group-item" style="width: 200px;"> <b>Timings: </b> </li>
+    <li class="list-group-item" style="width: 200px;"> {% block time1 %}{% endblock time1 %}</li>
+    
+  </ul>
+  <ul class="list-group list-group-horizontal-sm">
+    <li class="list-group-item" style="width: 200px;" ><b>Trip Duration :</b></li>
+    <li class="list-group-item" style="width: 200px;">{% block dur1 %}{% endblock dur1 %}</li>
+    
+  </ul>
+  <ul class="list-group list-group-horizontal-md">
+    <li class="list-group-item" style="width: 200px;"><b>Transportation Options:</b></li>
+    <li class="list-group-item" style="width: 200px;">{% block transport1 %}{% endblock transport1 %}</li>
+    
+  </ul>
+  <ul class="list-group list-group-horizontal-lg">
+    <li class="list-group-item" style="width: 200px;"><b>Entry Fee :</b></li>
+    <li class="list-group-item" style="width: 200px;">{% block entry1 %}{% endblock entry1 %}</li>
+     
+  </ul>
+
+  <ul class="list-group list-group-horizontal-lg">
+    <li class="list-group-item" style="width: 200px;"><b>Distance (from CSMT):</b> </li>
+    <li class="list-group-item" style="width: 200px;">{% block distance1 %}{% endblock distance1 %}</li>
+     
+  </ul>
+</div>
+<div style="height: 50px;"></div>
+
+
+
+
+
+
+
+
+
+
+
+            <nav class="blog-pagination" aria-label="Pagination">
+              
+            </nav>
+          </div>
+
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem">
+              <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="fst-italic">Konkan</h4>
+                <p class="mb-0">
+                  Sprawling across the shore from Mumbai to Goa, Konkan is home
+                  to picture-perfect sea beaches, splendid ruins, and much more.
+                  If you have ever traveled by train along the Konkan coast, you
+                  would know how beautiful this place is. There are plenty of
+                  places to visit in Konkan where you can admire the lush green
+                  charm of the coast and explore fishermen’s lives. Whether you
+                  have always wanted to visit a string of forts or spend a
+                  holiday at the tropical beaches in India, Konkan is
+                  undoubtedly the best place to be at. Being home to cascading
+                  waterfalls, virgin landscape, and delicious seafood, the
+                  Konkan coast has plenty to offer.
+                </p>
+                
+<h2>Map</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.64332560156!2d72.7410989636952!3d19.082522321972526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1635344172813!5m2!1sen!2sin" width="350" height="450" id="map" style="border: solid black;" allowfullscreen="" loading="lazy"></iframe>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="blog-footer foot text-center">
+            <p>Copyright &copy 2021-22 TravelGuide.com</p>
+      </footer>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
